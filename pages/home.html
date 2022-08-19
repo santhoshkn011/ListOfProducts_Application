@@ -19,61 +19,68 @@
             </div>          
         </div>
     </header>
-    <div class="form-content">
-        <!--Vegetables and Fruits Form-->
-        <div class="vegetable-form" style='float:left; margin-right: 50px; margin-bottom: 50px; width:50%'>
-            <form class="form" action="#" onsubmit="save(); return false">
-                <span id="img"><a href="" class="vegetable-list"><img src="../assets/images/vegetables.png"
-                    height="200" width="200" alt="vegetables"></a></span>
-                <label class="label text" for="vegetable"></label>
-                <div class="row-content">
-                    <input class="input" type="text" id="vegetable" name="vegetable" placeholder="Enter Vegetable Name" required>
-                    <input class="input" type="text" id="vegetable-quantity" name="vegetable-quantity" placeholder="Enter Quantity" required>
-                    <error-output class="veg-error" for="vegetable"></error-output>
-                </div>
-                <div class="add-reset">
-                    <button type="submit" class="button addButton" id="addButton">Add</button>
-                    <button type="reset" class="resetButton button" id="resetButton">Reset</button>
-                </div>
-        </div>
-
-        <div class="fruits-form" style="margin-bottom: 50px;">
-                <form class="form" action="#" onsubmit="save(); return false">
-                    <span id="img"><a href="" class="fruits-list"><img src="../assets/images/fruits.png"
-                        height="200" width="200" alt="fruits"></a></span>
-                    <label class="label text" for="fruits"></label>
-                    <div class="row-content">
-                        <input class="input" type="text" id="fruits" name="fuits" placeholder="Enter Fruit Name" required>
-                        <input class="input" type="text" id="fruits-quantity" name="fruits-quantity" placeholder="Enter Quantity" required>
-                        <error-output class="fruits-error" for="fruits"></error-output>
+    <div class="table-main">
+        <table id="display" class="table">
+            <th>
+                <div class="vegetables-form">
+                    <!--Vegetable Form-->
+                    <div>
+                        <form class="form" action="#" onsubmit="save(); return false">
+                            <span id="img"><a href="../pages/list.html" class="vegetable-list"><img src="../assets/images/vegetables.png"
+                                height="200" width="200" alt="vegetables"></a></span>
+                            <label class="label text" for="vegetable"></label>
+                            <div class="row-content">
+                                <input class="input" type="text" id="vegetable" name="vegetable" placeholder="Enter Vegetable Name" required>
+                                <error-output class="veg-error" for="vegetable"></error-output>
+                                <input class="input" type="text" id="vegetableQuantity" name="vegetableQuantity" placeholder="Enter Quantity" required>
+                                <error-output class="vegQ-error" for="vegetableQuantity"></error-output>
+                            </div>
+                                <div class="add-reset">
+                                    <button type="submit" class="button addButton" id="addButton">Add</button>
+                                    <button type="reset" class="resetButton button" id="resetButton">Reset</button>         
+                                </div>
+                        </form>      
                     </div>
-                    <div class="add-reset">
-                        <button type="submit" class="button addButton" id="addButton">Add</button>
-                        <button type="reset" class="resetButton button" id="resetButton">Reset</button>
-                    </div>
-                </form>
-        </div>
 
-    </div>
-    <div class="others-form">
-        <!--Others Form-->
-        <div>
-            <form class="form" action="#" onsubmit="save(); return false">
-                <span id="img"><a href="" class="others-list"><img src="../assets/images/listIcon.png"
-                    height="100" width="100" alt="others"></a></span>
-                <label class="label text" for="others"></label>
-                <div class="row-content">
-                    <input class="input" type="text" id="others" name="others" placeholder="Enter Other Item Name" required>
-                    <input class="input" type="text" id="others-quantity" name="others-quantity" placeholder="Enter Quantity" required>
-                    <error-output class="othes-error" for="others"></error-output>
                 </div>
-                <div class="add-reset">
-                    <button type="submit" class="button addButton" id="addButton">Add</button>
-                    <button type="reset" class="resetButton button" id="resetButton">Reset</button>
+            </th>
+            <th>
+                <div class="fruits-form">
+                    <!--Fruits Form-->
+                    <div>
+                        <form class="form" action="#" onsubmit="save(); return false">
+                            <span id="img"><a href="../pages/list.html" class="fruits-list"><img src="../assets/images/fruits.png"
+                                height="200" width="200" alt="fruits"></a></span>
+                            <label class="label text" for="fruits"></label>
+                            <div class="row-content">
+                                <input class="input" type="text" id="fruits" name="fuits" placeholder="Enter Fruit Name" required>
+                                <error-output class="fruits-error" for="fruits"></error-output>
+                                <input class="input" type="text" id="fruitsQuantity" name="fruitsQuantity" placeholder="Enter Quantity" required>
+                                <error-output class="fruitsQ-error" for="fruitsQuantity"></error-output>
+                            </div>
+                                <div class="add-reset">
+                                    <button type="submit" class="button addButton" id="addButton">Add</button>
+                                    <button type="reset" class="resetButton button" id="resetButton">Reset</button>         
+                                </div>
+                        </form>
+                    </div>                 
+                </div>  
+            </th>
+        </table>
+                            <label class="label text" for="others"></label>
+                            <div class="row-content">
+                                <input class="input" type="text" id="others" name="others" placeholder="Enter Other Item Name" required>
+                                <error-output class="others-error" for="others"></error-output>
+                                <input class="input" type="text" id="othersQuantity" name="othersQuantity" placeholder="Enter Quantity" required>  
+                                <error-output class="othersQ-error" for="othersQuantity"></error-output>      
+                            </div>
+                            <div class="add-reset">
+                                <button type="submit" class="button addButton" id="addButton">Add</button>
                 </div>
-            </form>
-        </div>
-    </div>
-    
+            </th>
+        </table>
+    </div>  
+    <script src="../js/listData.js"></script> 
+    <script src="../js/listHome.js"></script>
 </body>
 </html>
