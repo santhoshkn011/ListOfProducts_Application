@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 });
 
-
 function validateName() {
     const vegetable = document.querySelector('#vegetable');
     const vegError = document.querySelector('.veg-error');
