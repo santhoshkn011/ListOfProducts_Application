@@ -13,7 +13,7 @@ function validateName() {
             return;
         }
         try {
-            (new ListData()).vegetable = vegetable.value;
+            (new VegetableListData()).vegetable = vegetable.value;
             vegError.textContent = "";
         } catch (e) {
             vegError.textContent = e;
@@ -27,7 +27,7 @@ function validateName() {
             return;
         }
         try {
-            (new ListData()).fruits = fruits.value;
+            (new FruitsListData()).fruits = fruits.value;
             frError.textContent = "";
         } catch (e) {
             frError.textContent = e;
@@ -41,7 +41,7 @@ function validateName() {
             return;
         }
         try {
-            (new ListData()).others = others.value;
+            (new OthersListData()).others = others.value;
             otherError.textContent = "";
         } catch (e) {
             otherError.textContent = e;
@@ -58,7 +58,7 @@ function validateQuantity() {
             return;
         }
         try {
-            (new ListData()).vegetableQuantity = vegetableQuantity.value;
+            (new VegetableListData()).vegetableQuantity = vegetableQuantity.value;
             vegError.textContent = "";
         } catch (e) {
             vegError.textContent = e;
@@ -72,7 +72,7 @@ function validateQuantity() {
             return;
         }
         try {
-            (new ListData()).fruitsQuantity = fruitsQuantity.value;
+            (new FruitsListData()).fruitsQuantity = fruitsQuantity.value;
             frError.textContent = "";
         } catch (e) {
             frError.textContent = e;
@@ -87,7 +87,7 @@ function validateQuantity() {
             return;
         }
         try {
-            (new ListData()).othersQuantity = othersQuantity.value;
+            (new OthersListData()).othersQuantity = othersQuantity.value;
             otherError.textContent = "";
         } catch (e) {
             otherError.textContent = e;
@@ -95,5 +95,4 @@ function validateQuantity() {
     });
     
 }
-
 

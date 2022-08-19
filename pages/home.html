@@ -19,31 +19,38 @@
             </div>          
         </div>
     </header>
-    <form class="form" action="#" onsubmit="save(); return false">
-        <div class="table-main">
-            <table id="display" class="table">
-                <th>
+    <div class="table-main">
+        <table id="display" class="table">
+            <th>
+                <form class="form" action="#" onsubmit="saveVeg(); return false">
                     <div class="vegetables-form">
                         <!--Vegetable Form-->
                         <div>
-                            <span id="img"><a href="../pages/list.html" class="vegetable-list"><img src="../assets/images/vegetables.png"
+                            <span id="img"><a href="../pages/vegetableList.html" class="vegetable-list"><img src="../assets/images/vegetables.png"
                                 height="200" width="320" alt="vegetables"></a></span>
                             <label class="label text" for="vegetable"></label>
                             <div class="row-content">
-                                <input class="input" type="text" id="vegetable" name="vegetable" placeholder="Enter Vegetable Name" required>
+                                <input class="input" type="text" id="vegetable" name="vegetable" placeholder="Enter Vegetable Name">
                                 <error-output class="veg-error" for="vegetable"></error-output>
-                                <input class="input" type="text" id="vegetableQuantity" name="vegetableQuantity" placeholder="Enter Quantity" required>
+                                <input class="input" type="text" id="vegetableQuantity" name="vegetableQuantity" placeholder="Enter Quantity">
                                 <error-output class="vegQ-error" for="vegetableQuantity"></error-output>
                             </div>                           
+                        </div>  
+                        <div class="add-reset">
+                            <div>
+                                <button type="submit" class="button addButton" id="addButton">Add to the List</button>
+                                <button type="reset" class="resetButton button" id="resetButton">Reset Entries</button>
+                            </div>            
                         </div>
-                        
                     </div>
-                </th>
-                <th>
+                </form>               
+            </th>
+            <th>
+                <form class="form" action="#" onsubmit="saveFruits(); return false">
                     <div class="fruits-form">
                         <!--Fruits Form-->
                         <div>
-                            <span id="img"><a href="../pages/list.html" class="fruits-list"><img src="../assets/images/fruits.png"
+                            <span id="img"><a href="../pages/fruitsList.html" class="fruits-list"><img src="../assets/images/fruits.png"
                                 height="200" width="320" alt="fruits"></a></span>
                             <label class="label text" for="fruits"></label>
                             <div class="row-content">
@@ -52,18 +59,26 @@
                                 <input class="input" type="text" id="fruitsQuantity" name="fruitsQuantity" placeholder="Enter Quantity">
                                 <error-output class="fruitsQ-error" for="fruitsQuantity"></error-output>
                             </div>       
-                        </div>                 
-                    </div>  
-                </th>
-            </table>
-        </div>
-        <div class="table-main">
-            <table id="display" class="table">
-                <th>
+                        </div>  
+                        <div class="add-reset">
+                            <div>
+                                <button type="submit" class="button addButton" id="addButton">Add to the List</button>
+                                <button type="reset" class="resetButton button" id="resetButton">Reset Entries</button>
+                            </div>            
+                        </div>               
+                    </div> 
+                </form> 
+            </th>
+        </table>
+    </div>
+    <div class="table-main">
+        <table id="display" class="table">
+            <th>
+                <form class="form" action="#" onsubmit="saveOthers(); return false">
                     <div class="others-form">
                         <!--Others Form-->
                         <div>
-                            <span id="img"><a href="../pages/list.html" class="others-list"><img src="../assets/images/listImage.png"
+                            <span id="img"><a href="../pages/othersList.html" class="others-list"><img src="../assets/images/listImage.png"
                                 height="100" width="100" alt="others"></a></span>
                             <label class="label text" for="others"></label>
                             <div class="row-content">
@@ -73,18 +88,23 @@
                                 <error-output class="othersQ-error" for="othersQuantity"></error-output>      
                             </div>
                         </div>
+                        <div class="add-reset">
+                            <div>
+                                <button type="submit" class="button addButton" id="addButton">Add to the List</button>
+                                <button type="reset" class="resetButton button" id="resetButton">Reset Entries</button>
+                            </div>            
+                        </div>
                     </div>
-                </th>
-            </table>
-            <div class="add-reset">
-                <button type="submit" class="button addButton" id="addButton">Add to the List</button>
-                <button type="reset" class="resetButton button" id="resetButton">Reset Entries</button>
-            </div>
-        </div>
-    </form>
-    <script src="../js/listData.js"></script> 
+                </form>
+            </th>
+        </table>
+    </div>
+    <script src="../js/vegetableListData.js"></script>
+    <script src="../js/fruitsListData.js"></script>
+    <script src="../js/othersListData.js"></script>
     <script src="../js/validation.js"></script>
-    <script src="../js/saveData.js"></script>
-    
+    <script src="../js/fruitsSaveData.js"></script>
+    <script src="../js/othersSaveData.js"></script>
+    <script src="../js/vegSaveData.js"></script>
 </body>
 </html>
