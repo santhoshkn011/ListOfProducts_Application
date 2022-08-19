@@ -1,4 +1,4 @@
-class listData {
+class ListData {
     get id(){
         return this._id
     }
@@ -79,5 +79,5 @@ class listData {
         return "id=" + this.id + "vegetable = " + this.vegetable + ", vegetablQuantity = " + this.vegetableQuantity + ", fruits = " + this.fruits + ", fruitsQuantity = " + this.fruitsQuantity + ", Others = " + this.others + 
           ", othersQuantity = " + this.othersQuantity;
     }
-
+    
 }
