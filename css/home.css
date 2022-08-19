@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+  }
+
+.header {
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.header-content {  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.list-text {
+    font: normal normal bold 18px/20px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: green;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.header-text {
+    color:black;
+}
+
+.others-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  .text {
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+  }
+
+  .input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-right: 12px;
+  }
+
+  error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+  }
+
+  .button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 100px;
+    padding: 7px 7px;
+    margin: 0px 12px;
+    border: 1px solid #707070;
+    cursor: pointer;
+  }
+
+  .addButton {
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: 1px solid #4596aa;
+    border-radius: 5px;
+    opacity: 1;
+  }
+  .addButton:hover {
+    background-color: #203c66;
+    color:white;
+  }
+
+  .resetButton {
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: 1px solid #615d5d;
+    border-radius: 5px;
+    opacity: 1;
+  }
+
+  .resetButton:hover {
+    background-color: rgb(32, 99, 54);
+    color:white;
+  }
