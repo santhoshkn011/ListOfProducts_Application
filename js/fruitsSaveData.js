@@ -1,27 +1,27 @@
 //on save
   const saveFruits = () => {
-    let fruitsList = createFruitsList();  
-    createAndUpdateStorage(fruitsList);
+    let foodList = createFruitsList();  
+    createAndUpdateStorage(foodList);
     alert("Details Saved");
   }
   
   //Save for Fruits
   
   const createFruitsList = () => {
-    let fruitsList = new FruitsListData();
+    let foodList = new FruitsListData();
   
-    fruitsList.fruits = getInputValueById('#fruits');
-    fruitsList.fruitsQuantity = getInputValueById('#fruitsQuantity')
+    foodList.food = getInputValueById('#fruits');
+    foodList.foodQuantity = getInputValueById('#fruitsQuantity')
     alert("Save Fruits List");
-    return fruitsList;
+    return foodList;
   }
   
-  function createAndUpdateStorage(fruitsList) {
+  function createAndUpdateStorage(foodList) {
     let frList = JSON.parse(localStorage.getItem("ListOfItems"));
     if (frList != undefined) {
-        frList.push(fruitsList);
+        frList.push(foodList);
     } else {
-        frList = [fruitsList];
+        frList = [foodList];
     }
     //alert(frList.toString());
     localStorage.setItem("ListOfItems", JSON.stringify(frList));

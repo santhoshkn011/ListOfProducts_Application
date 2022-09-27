@@ -9,8 +9,8 @@
   const createOthersList = () => {
     let othersList = new OthersListData();
   
-    othersList.others = getInputValueById('#others');
-    othersList.othersQuantity = getInputValueById('#othersQuantity')
+    othersList.food = getInputValueById('#others');
+    othersList.foodQuantity = getInputValueById('#othersQuantity')
     alert("Save Othes");
     return othersList;
   }

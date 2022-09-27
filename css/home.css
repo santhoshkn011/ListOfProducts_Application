@@ -117,13 +117,13 @@ error-output {
   background-color: rgb(175, 236, 175);
   border-radius: 10px;
   border : 2px solid grey;
-  margin: 30px;
+  margin: 50px;
 }
 .fruits-form {
   background-color: rgb(235, 211, 176);
   border-radius: 10px;
   border : 2px solid grey;
-  margin: 30px;  
+  margin: 50px;  
 }
 
 .others-form{
@@ -133,7 +133,7 @@ error-output {
   background-color: #ccc;
   border-radius: 10px;
   border : 2px solid grey; 
-  padding: 0px 20px;
+  margin-bottom: 70px;
 }
 
 #img {

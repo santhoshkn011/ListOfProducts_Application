@@ -1,7 +1,7 @@
 //on save
 const saveVeg = () => {
-  let vegetableList = createVegetableList();
-  createAndUpdateStorage(vegetableList);
+  let foodList = createVegetableList();
+  createAndUpdateStorage(foodList);
   // let fruitsList = createFruitsList();  
   // createAndUpdateStorage(fruitsList);
   // let othersList = createOthersList();
@@ -11,19 +11,19 @@ const saveVeg = () => {
 //Save for Vegetables
 
 const createVegetableList = () => {
-  let vegetableList = new VegetableListData();
-  vegetableList.vegetable = getInputValueById('#vegetable');
-  vegetableList.vegetableQuantity = getInputValueById('#vegetableQuantity')
+  let foodList = new VegetableListData();
+  foodList.food = getInputValueById('#vegetable');
+  foodList.foodQuantity = getInputValueById('#vegetableQuantity')
   alert("Save Vegetable List");
-  return vegetableList;
+  return foodList;
 }
 
-function createAndUpdateStorage(vegetableList) {
+function createAndUpdateStorage(foodList) {
   let vegList = JSON.parse(localStorage.getItem("ListOfItems"));
   if (vegList != undefined) {
-      vegList.push(vegetableList);
+      vegList.push(foodList);
   } else {
-      vegList = [vegetableList];
+      vegList = [foodList];
   }
   //alert(vegList.toString());
   localStorage.setItem("ListOfItems", JSON.stringify(vegList));

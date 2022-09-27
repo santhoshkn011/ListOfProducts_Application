@@ -6,28 +6,28 @@ class FruitsListData {
         this._id = id
     }
 
-    get fruits(){
-        return this._fruits;
+    get food(){
+        return this._food;
     }
-    set fruits(fruits) {
+    set food(food) {
 
         let vegRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
-        if (vegRegex.test(fruits))
-            this._fruits = fruits;
+        if (vegRegex.test(food))
+            this._food = food;
         else
             throw new Error("Incorrect fruit Name");     
     }
-    get fruitsQuantity(){
-        return this._fruitsQuantity;
+    get foodQuantity(){
+        return this._foodQuantity;
     }
-    set fruitsQuantity(fruitsQuantity) {
+    set foodQuantity(foodQuantity) {
         let fruitsQRegex = RegExp('^[a-zA-Z0-9\\s]{2,}$');
-        if (fruitsQRegex.test(fruitsQuantity))       
-            this._fruitsQuantity = fruitsQuantity;
+        if (fruitsQRegex.test(foodQuantity))       
+            this._foodQuantity = foodQuantity;
         else
             throw new Error("Enter Fruit Quantity"); 
     }
     toString() {
-        return "id=" + this.id + "fruits = " + this.fruits + ", fruitsQuantity = " + this.fruitsQuantity ;
+        return "id=" + this.id + "food = " + this.food + ", foodQuantity = " + this.foodQuantity ;
     } 
 }
