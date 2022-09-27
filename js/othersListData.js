@@ -11,8 +11,8 @@ class OthersListData {
     }
     set others(others) {
 
-        let vegRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
-        if (vegRegex.test(fruits))
+        let otherRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
+        if (otherRegex.test(others))
             this._others = others;
         else
             throw new Error("Incorrect other Name");     

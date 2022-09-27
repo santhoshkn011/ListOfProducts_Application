@@ -133,6 +133,7 @@ error-output {
   background-color: #ccc;
   border-radius: 10px;
   border : 2px solid grey; 
+  padding: 0px 20px;
 }
 
 #img {
